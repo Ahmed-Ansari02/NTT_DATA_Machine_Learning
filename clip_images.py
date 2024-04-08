@@ -19,7 +19,7 @@ def clip_image(image_path, xmin, ymin, xmax, ymax, categories):  # Open the imag
 
 if __name__ == "__main__":
     # CSV file containing coordinates (assuming format: left,upper,right,lower)
-    csv_file = "./roboflow/valid/_annotations.csv"
+    csv_file = "./roboflow_dataset/valid/_annotations.csv"
     path = os.getcwd()
     print(path)
     df = pd.read_csv(os.path.join(path, csv_file))
