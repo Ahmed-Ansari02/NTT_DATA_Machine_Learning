@@ -26,7 +26,7 @@ if __name__ == "__main__":
     distinct_categories = df['class'].unique()
     print(distinct_categories)
     for index, row in df.iterrows():
-        file_name = os.path.join(path, f"./roboflow/valid/{row['filename']}")
+        file_name = os.path.join(path, f"./roboflow_dataset/valid/{row['filename']}")
         clip_image(
             file_name,
             row["xmin"],
